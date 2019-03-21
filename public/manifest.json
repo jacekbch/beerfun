@@ -1,0 +1,6 @@
+{
+  "short_name": "BeerFun",
+  "name": "BeerFun",
+  "start_url": ".",
+  "display": "standalone"
+}

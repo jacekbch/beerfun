@@ -1,0 +1,16 @@
+@import "./../../scss/variables.scss";
+
+header.app-header {
+  margin: 4rem 0;
+  font-size: 2rem;
+  font-weight: $font-weight-bold;
+
+  .highlight {
+    color: $primary-color;
+  }
+
+  a {
+    color: $gray-600;
+    text-decoration: none;
+  }
+}

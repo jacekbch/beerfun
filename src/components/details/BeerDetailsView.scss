@@ -1,0 +1,90 @@
+@import "./../../scss/variables.scss";
+
+.beer-details-view {
+  .beer-details {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+
+    .beer-image {
+      flex-shrink: 0;
+      margin: 0 0 3rem 0;
+      width: auto;
+      height: 12rem;
+
+      img, svg {
+        width: auto;
+        height: 100%;
+      }
+    }
+
+    @include media-breakpoint-up(sm) {
+      flex-wrap: nowrap;
+
+      .beer-image {
+        margin: 0 3rem 0 0;
+        width: 6rem;
+        height: auto;
+        min-height: 6rem;
+
+        img, svg {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+    
+
+    h5 {
+      font-weight: $font-weight-bold;
+    }
+
+    .tagline {
+      color: $gray-500;
+    }
+
+    .line {
+      margin-top: .75rem;
+      width: 4rem;
+      height: .25rem;
+      background-color: $primary-color;
+    }
+
+    ul.properties {
+      margin: 2rem 0;
+      padding: 0;
+      list-style: none;
+
+      li {
+        margin: 0;
+        margin-right: 1rem;
+        padding: 0;
+        display: inline-block;
+      }
+    }
+
+    .tips {
+      margin-top: 2rem;
+    }
+
+    .pairing {
+      margin-top: 2rem;
+
+      ul, li {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+    }
+  }
+
+  .similar-beers {
+    margin-top: 4rem;
+  }
+
+  .loader {
+    padding: 3rem;
+    text-align: center;
+  }
+}

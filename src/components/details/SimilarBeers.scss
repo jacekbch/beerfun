@@ -1,0 +1,52 @@
+@import "./../../scss/variables.scss";
+
+.similar-beers {
+  .similar-beers-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    margin: 0 -.5rem;
+
+    .beer {
+      margin: .5rem;
+      padding: 1rem;
+      width: 100%;
+      border: $border-width solid $border-color;
+      border-radius: $border-radius;
+      text-align: center;
+      cursor: pointer;
+      transition: box-shadow .3s;
+
+      &:hover {
+        box-shadow: $box-shadow;
+        transition: box-shadow .3s;
+      }
+
+      .beer-image {
+        height: 5rem;
+    
+        img {
+          height: calc(100% - 1rem);
+        }
+    
+        svg {
+          width: auto;
+          height: calc(100% - 2rem);
+        }
+      }
+
+      .name {
+        margin-top: 1rem;
+        font-weight: $font-weight-bold;
+      }
+    }
+
+    @include media-breakpoint-up(sm) {
+      flex-wrap: nowrap;
+
+      .beer {
+        width: calc(33% - .5rem);
+      }
+    }
+  }
+}

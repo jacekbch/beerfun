@@ -1,0 +1,20 @@
+@import "./../../scss/variables.scss";
+
+.modal {
+  .modal-content {
+    border: 0px;
+    box-shadow: $box-shadow-lg;
+
+    .modal-body {
+      padding: 3rem;
+    }
+
+    .close-button {
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      padding: 1rem;
+      cursor: pointer;
+    }
+  }
+}

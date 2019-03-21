@@ -1,0 +1,18 @@
+@import "./../../scss/variables.scss";
+
+.beers-list-component {
+  .beers-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    @include media-breakpoint-up(sm) {
+      margin: -1rem;
+    }
+  }
+  
+  .loader {
+    margin: 5rem;
+    text-align: center;
+  }
+}

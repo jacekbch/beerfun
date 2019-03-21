@@ -1,0 +1,10 @@
+@import "variables";
+
+@import "~bootstrap/scss/bootstrap";
+
+.error {
+  padding: 3rem;
+  color: $red;
+  font-weight: $font-weight-bold;
+  text-align: center;
+}
